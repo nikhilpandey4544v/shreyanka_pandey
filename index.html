@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Hub - Shreyank Pandey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="developer.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="hero-enhanced.css">
+    <link rel="stylesheet" href="stats-enhanced.css">
+    <link rel="stylesheet" href="hero-spacing.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Shreyank Hub</h1>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#developer">Developer</a></li>
+                <li><a href="#matches">Matches</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="floating-elements">
+                    <div class="float-ball">⚽</div>
+                    <div class="float-trophy">🏆</div>
+                    <div class="float-star">⭐</div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">🔥 TRENDING NOW</div>
+                <h1 class="hero-title">
+                    <span class="title-main">Welcome to</span>
+                    <span class="title-highlight">Football Hub</span>
+                    <span class="title-accent">2025</span>
+                </h1>
+                <p class="hero-subtitle">Your ultimate destination for football updates, matches, and news</p>
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <img src="shoot.jpg" alt="Shreyank Pandey" class="profile-pic">
+                    </div>
+                    <div class="creator-info">
+                        <span class="creator-name">Shreyank Pandey</span>
+                        <span class="creator-role">Football Enthusiast</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="cta-btn primary">🚀 Explore Now</button>
+                    <button class="cta-btn secondary">📊 View Stats</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4B+</span>
+                        <span class="stat-label">Global Fans</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">32</span>
+                        <span class="stat-label">World Cup Teams</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Football & Me</h2>
+                <div class="about-content">
+                    <div class="football-history">
+                        <h3>⚽ Football History Timeline</h3>
+                        <div class="history-timeline">
+                            <div class="timeline-item active" data-year="1863">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>1863 - Birth of Modern Football</h4>
+                                    <p>The Football Association was formed in England, establishing the first official rules.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-year="1904">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>1904 - FIFA Founded</h4>
+                                    <p>FIFA was established to govern international football competitions.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-year="1930">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>1930 - First World Cup</h4>
+                                    <p>Uruguay hosted and won the inaugural FIFA World Cup tournament.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-year="2024">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>2024 - Global Phenomenon</h4>
+                                    <p>Football unites over 4 billion fans worldwide across all continents.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fun-facts">
+                            <h4>⭐ Fun Facts</h4>
+                            <div class="facts-grid">
+                                <div class="fact-card" onclick="flipCard(this)">
+                                    <div class="fact-front">🌍 Most Popular Sport</div>
+                                    <div class="fact-back">4+ billion fans globally</div>
+                                </div>
+                                <div class="fact-card" onclick="flipCard(this)">
+                                    <div class="fact-front">⚽ Ball Evolution</div>
+                                    <div class="fact-back">From pig bladders to synthetic</div>
+                                </div>
+                                <div class="fact-card" onclick="flipCard(this)">
+                                    <div class="fact-front">🏆 World Cups</div>
+                                    <div class="fact-back">22 tournaments held so far</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="player-profile">
+                        <h3>Player Profile</h3>
+                        <div class="profile-card">
+                            <div class="profile-header">
+                                <div class="profile-picture">
+                                    <img src="shoot.jpg" alt="Shreyank Pandey" class="player-pic">
+                                </div>
+                                <div class="profile-info">
+                                    <h4>Shreyank Pandey</h4>
+                                    <p class="profile-subtitle">Football Enthusiast</p>
+                                </div>
+                            </div>
+                            <div class="profile-details">
+                                <div class="player-stats">
+                                    <div class="stat">
+                                        <span class="label">Age:</span>
+                                        <span class="value">16 years old</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="label">Position:</span>
+                                        <span class="value">striker </span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="label">Nationality:</span>
+                                        <span class="value">Indian</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="label">Height:</span>
+                                        <span class="value">5"11</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="label">Preferred Foot:</span>
+                                        <span class="value">Right</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="label">Goals:</span>
+                                        <span class="value">150+</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="label">Assists:</span>
+                                        <span class="value">100</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="label">Matches:</span>
+                                        <span class="value">100+</span>
+                                    </div>
+                                </div>
+                                <p class="player-bio">Hey, I am Shreyank Pandey, I'm 16 years old and passionate about football. I've been playing since childhood and dream of becoming a professional footballer. This website showcases my love for the beautiful game and keeps track of football news and updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="matches" class="matches">
+            <div class="container">
+                <h2>Upcoming Matches</h2>
+                <div class="match-cards">
+                    <div class="match-card">
+                        <div class="match-header">
+                            <div class="teams">
+                                <span class="team">Manchester United</span>
+                                <span class="vs">VS</span>
+                                <span class="team">Liverpool</span>
+                            </div>
+                        </div>
+                        <div class="match-info">
+                            <p class="date">March 15, 2024</p>
+                            <p class="time">3:00 PM</p>
+                            <p class="venue">Old Trafford</p>
+                        </div>
+                    </div>
+                    <div class="match-card">
+                        <div class="match-header">
+                            <div class="teams">
+                                <span class="team">Barcelona</span>
+                                <span class="vs">VS</span>
+                                <span class="team">Real Madrid</span>
+                            </div>
+                        </div>
+                        <div class="match-info">
+                            <p class="date">March 18, 2024</p>
+                            <p class="time">8:00 PM</p>
+                            <p class="venue">Camp Nou</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teams" class="teams">
+            <div class="container">
+                <h2>🏆 Top Teams</h2>
+                <div class="teams-landscape">
+                    <div class="team-card-landscape" onclick="selectTeam(this)">
+                        <div class="team-badge">
+                            <div class="team-logo-large">MC</div>
+                            <div class="team-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="team-details">
+                            <h3>Manchester City</h3>
+                            <p class="team-league">Premier League</p>
+                            <div class="team-stats">
+                                <span class="stat-item">🏆 Champions</span>
+                                <span class="stat-item">⚽ 95 Goals</span>
+                                <span class="stat-item">🛡️ 31 Clean Sheets</span>
+                            </div>
+                            <div class="team-rating">
+                                <span class="rating-label">Rating:</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="rating-value">95/100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card-landscape" onclick="selectTeam(this)">
+                        <div class="team-badge">
+                            <div class="team-logo-large">BM</div>
+                            <div class="team-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="team-details">
+                            <h3>Bayern Munich</h3>
+                            <p class="team-league">Bundesliga</p>
+                            <div class="team-stats">
+                                <span class="stat-item">🏆 11x Champions</span>
+                                <span class="stat-item">⚽ 89 Goals</span>
+                                <span class="stat-item">🛡️ 28 Clean Sheets</span>
+                            </div>
+                            <div class="team-rating">
+                                <span class="rating-label">Rating:</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 92%"></div>
+                                </div>
+                                <span class="rating-value">92/100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card-landscape" onclick="selectTeam(this)">
+                        <div class="team-badge">
+                            <div class="team-logo-large">PSG</div>
+                            <div class="team-stars">⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="team-details">
+                            <h3>Paris Saint-Germain</h3>
+                            <p class="team-league">Ligue 1</p>
+                            <div class="team-stats">
+                                <span class="stat-item">🏆 Leaders</span>
+                                <span class="stat-item">⚽ 78 Goals</span>
+                                <span class="stat-item">🛡️ 22 Clean Sheets</span>
+                            </div>
+                            <div class="team-rating">
+                                <span class="rating-label">Rating:</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 88%"></div>
+                                </div>
+                                <span class="rating-value">88/100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card-landscape" onclick="selectTeam(this)">
+                        <div class="team-badge">
+                            <div class="team-logo-large">RM</div>
+                            <div class="team-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="team-details">
+                            <h3>Real Madrid</h3>
+                            <p class="team-league">La Liga</p>
+                            <div class="team-stats">
+                                <span class="stat-item">🏆 14x UCL Winners</span>
+                                <span class="stat-item">⚽ 87 Goals</span>
+                                <span class="stat-item">🛡️ 25 Clean Sheets</span>
+                            </div>
+                            <div class="team-rating">
+                                <span class="rating-label">Rating:</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 94%"></div>
+                                </div>
+                                <span class="rating-value">94/100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="developer" class="developer">
+            <div class="container">
+                <h2>🚀 Meet the Developer</h2>
+                <div class="developer-card">
+                    <div class="dev-background">
+                        <div class="code-animation">
+                            <div class="code-line">import pandas as pd</div>
+                            <div class="code-line">import numpy as np</div>
+                            <div class="code-line">import mysql.connector</div>
+                        </div>
+                    </div>
+                    <div class="dev-content">
+                        <div class="dev-profile">
+                            <div class="dev-avatar">
+                                <img src="nikhil.jpg" alt="Nikhil Pandey" class="dev-pic">
+                                <div class="dev-status">🤖 AI/ML Student</div>
+                            </div>
+                            <div class="dev-info">
+                                <h3>Nikhil Pandey</h3>
+                                <p class="dev-title">AI/ML Developer & Student</p>
+                                <p class="dev-bio">Hey, I am an AI/ML student currently in my 3rd year at MDU University. Passionate about artificial intelligence, machine learning, and creating innovative solutions that bridge technology and real-world applications.</p>
+                                
+                                <div class="dev-stats">
+                                    <div class="stat-box">
+                                        <span class="stat-icon">🎓</span>
+                                        <div class="stat-info">
+                                            <span class="stat-label">Education</span>
+                                            <span class="stat-value">3rd Year Student</span>
+                                        </div>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="stat-icon">🏫</span>
+                                        <div class="stat-info">
+                                            <span class="stat-label">University</span>
+                                            <span class="stat-value">MDU University</span>
+                                        </div>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="stat-icon">🤖</span>
+                                        <div class="stat-info">
+                                            <span class="stat-label">Specialization</span>
+                                            <span class="stat-value">AI/ML</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-stack">
+                                    <h4>🛠️ Tech Stack</h4>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag python">Python</span>
+                                        <span class="tech-tag html">HTML</span>
+                                        <span class="tech-tag css">CSS</span>
+                                        <span class="tech-tag javascript">JavaScript</span>
+                                        <span class="tech-tag pandas">Pandas</span>
+                                        <span class="tech-tag mysql">MySQL</span>
+                                        <span class="tech-tag numpy">NumPy</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="dev-projects">
+                                    <h4>📊 Current Focus</h4>
+                                    <div class="project-list">
+                                        <div class="project-item">
+                                            <span class="project-icon">🧠</span>
+                                            <span class="project-name">Neural Networks</span>
+                                        </div>
+                                        <div class="project-item">
+                                            <span class="project-icon">📈</span>
+                                            <span class="project-name">Data Analysis</span>
+                                        </div>
+                                        <div class="project-item">
+                                            <span class="project-icon">🔍</span>
+                                            <span class="project-name">Computer Vision</span>
+                                        </div>
+                                        <div class="project-item">
+                                            <span class="project-icon">💬</span>
+                                            <span class="project-name">NLP Projects</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div class="news-grid">
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="category">Transfers</span>
+                            <span class="date">2 hours ago</span>
+                        </div>
+                        <h3>Transfer Window Updates</h3>
+                        <p>Latest transfers and rumors from top European clubs...</p>
+                    </article>
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="category">Champions League</span>
+                            <span class="date">5 hours ago</span>
+                        </div>
+                        <h3>Champions League Draw</h3>
+                        <p>Exciting matchups revealed for the next round...</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <p>&copy; 2025 Shreyank Hub - Created by Nikhil Pandey</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="https://www.instagram.com">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

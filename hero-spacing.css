@@ -1,0 +1,13 @@
+/* Additional Hero Spacing */
+.hero-content {
+    padding-top: 5rem !important;
+}
+
+.hero-badge {
+    margin-top: 3rem !important;
+}
+
+.hero-title {
+    margin-top: 3rem !important;
+    padding-top: 2rem !important;
+}

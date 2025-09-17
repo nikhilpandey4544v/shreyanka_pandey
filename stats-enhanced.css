@@ -1,0 +1,94 @@
+/* Enhanced Hero Stats */
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    min-width: 180px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.stat-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.stat-number {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #FFD700;
+    text-shadow: 0 0 20px rgba(255,215,0,0.8);
+    margin-bottom: 0.5rem;
+    animation: numberGlow 2s ease-in-out infinite alternate;
+}
+
+.stat-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@keyframes numberGlow {
+    0% { 
+        text-shadow: 0 0 20px rgba(255,215,0,0.8);
+        transform: scale(1);
+    }
+    100% { 
+        text-shadow: 0 0 30px rgba(255,215,0,1), 0 0 40px rgba(255,165,0,0.6);
+        transform: scale(1.05);
+    }
+}
+
+/* Individual stat colors */
+.stat-item:nth-child(1) .stat-number {
+    color: #FF6B35;
+    text-shadow: 0 0 20px rgba(255,107,53,0.8);
+}
+
+.stat-item:nth-child(2) .stat-number {
+    color: #00FF7F;
+    text-shadow: 0 0 20px rgba(0,255,127,0.8);
+}
+
+.stat-item:nth-child(3) .stat-number {
+    color: #FFD700;
+    text-shadow: 0 0 20px rgba(255,215,0,0.8);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero-stats {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .stat-item {
+        min-width: 140px;
+        padding: 1.5rem 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+    }
+}
